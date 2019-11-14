@@ -12,8 +12,8 @@ int main() {
 
     // PRINTF: A FUNCTION, PRINTS TO THE CONSOLE
     // This prints characters to the console.
-    // In this case, it prints "Hello, World!"
-    printf("Hello, World!");
+    // In this case, it prints "Hello, World!", with a trailing newline.
+    printf("Hello, World!\n");
 
     // RETURN: EXITS A FUNCTION, RETURNS A VALUE
     // Here return is used to exit the program.
