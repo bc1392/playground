@@ -1,7 +1,10 @@
+// Use statements.
 use std::io::{self, Write};
 
 // FlUnwrap - Alias function for flushing and unwrapping stdout.
-fn flunwrap() { io::stdout().flush().unwrap(); }
+fn flunwrap() {
+    io::stdout().flush().unwrap();
+}
 
 // pRead_line - Prompted read_line.
 fn pread_line(buf: &mut String, pr: String) -> io::Result<usize> {
@@ -9,12 +12,32 @@ fn pread_line(buf: &mut String, pr: String) -> io::Result<usize> {
     return io::stdin().read_line(buf);
 }
 
+// Main - The required, main instructions.
 fn main() {
 
-    println!("This is a test application that I used to learn IO.");
+    // Variable initialization.
+    let (mut menu, mut submenu, mut item) = (0, 0, 0);
+    let mut selection = String::new();
+    let mut exitcall = false;
 
-    let mut code = String::new();
-    pread_line(&mut code, String::from("Enter the super secret code: ")).expect("Uh, oh!");
-    if code.trim_end() == "password" { println!("Your in!"); }
+    while !exitcall {
+
+        match menu {
+
+            0 => {
+                println!("=== MAIN MENU ===");
+                println!("[0] Quit");
+                println!("=================");
+                pread_line(&mut selection, String::from("(0)> ")).expect("Uh, Oh!");
+                if selection.trim_end() == "0" { exitcall = true; }
+            }
+
+            _ => {
+                println!("I dont know what to do.");
+            }
+
+        }
+
+    }
 
 }
