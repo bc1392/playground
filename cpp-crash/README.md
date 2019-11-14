@@ -8,7 +8,6 @@ Code written while learning C++ through a Crash Course book by Josh Lospinoso.
 |---:|:---|
 | *Empty* | |
 
-
 ---
 
 ### Notes
