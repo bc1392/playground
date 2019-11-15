@@ -3,7 +3,7 @@ Up and Running
 
 ---
 
-### Projects
+### Sections
 | **Directory** | **Description** |
 |---:|:---|
 | [prgm-struct](prgm-struct) | Commented source code related to program structure. |

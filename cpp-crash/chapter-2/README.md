@@ -3,7 +3,7 @@ Types
 
 ---
 
-### Projects
+### Sections
 | **Directory** | **Description** |
 |---:|:---|
 | [fundamental](fundamental) | The most basic types of C++. |
