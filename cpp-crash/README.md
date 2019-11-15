@@ -5,6 +5,7 @@ Code written while learning C++ through a Crash Course book by Josh Lospinoso.
 
 ### Chapters
 - **[Chapter 1](chapter-1)**: Up and Running
+- **[Chapter 2](chapter-2)**: Types
 
 ---
 
