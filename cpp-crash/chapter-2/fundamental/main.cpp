@@ -20,3 +20,10 @@ unsigned short ed = 12345;
 unsigned short eb = 0b011000000111001;
 unsigned short eo = 030071;
 unsigned short eh = 0x3039;
+
+// FLOATING POINTS
+// Float / Double / Long Double = Single / Double / Extended (Percision)
+// Single percision suffixed with f/F, while extended is suffixed with l/L.
+float fs = 0.1F;
+double fd = 0.2;
+long double fld = 0.3L;
