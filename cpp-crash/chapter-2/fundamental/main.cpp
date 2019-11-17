@@ -5,7 +5,7 @@
 // These store whole numbers.
 // Short/[Normal:Int]/Long/LongLong = 2/4/4/8 Bytes
 // [Normal:Signed]/Unsigned = Can be Negative / Cannot be Negative
-// A table of these types, their sizes, and their format specifiers is on page 32.
+// A table of these types, their sizes, and their format specifiers is in "table.md".
 short as = -32768; unsigned short au = 65536;
 int bs = -2147483648; unsigned int bu = 4294967296;
 long cs = -2147483648; unsigned long cu = 4294967296;
