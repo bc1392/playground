@@ -4,10 +4,8 @@ Code used while learning the [Rust](https://github.com/rust-lang/rust) language 
 ---
 
 ### Projects
-| **Directory** | **Description** |
-|---:|:---|
-| [hello-world](hello-world) | Literally a "Hello, World!" program. |
-| [io-test](io-test) | Code used while learning IO usage in Rust. |
+- **[hello-world](hello-world)**: Literally a "Hello, World!" program.
+- **[io-test](io-test)**: Code used while learning IO usage in Rust.
 
 
 ---
