@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>CSS Button Animations</title>
+
+        <style>
+        
+            body {
+                font-family: sans-serif; font-size: 16px;
+                padding: 0; margin: 2rem;
+            }
+
+            @keyframes button-a-hover {
+                from { box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25); transform: scale(1);    }
+                to   { box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.35); transform: scale(1.25); }
+            }
+
+            a.button-a, a.button-a:visited {
+                color: white; background: #1994d9;
+                text-decoration: none; padding: 0.5em 2em;
+                border-radius: 0.25em; 
+            }
+
+            a.button-a {
+                animation: button-a-hover 1s ease-in-out 0s 1 reverse;
+                box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25); transform: scale(1);
+            }
+
+            a.button-a:hover {
+                animation: button-a-hover 2s ease-in-out 0s 1 normal !important;
+                box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.35); transform: scale(3);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <h1>Button Animations</h1>
+
+        <a class="button-a" href="#">Test 1</a>
+
+    </body>
+
+</html>

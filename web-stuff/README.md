@@ -4,4 +4,4 @@ Experiments in web design with HTML, CSS, and JS.
 ---
 
 ### Projects
-- *Coming soon.*
+- **[css-animation](css-animation)**: Learning how to use CSS animations.
