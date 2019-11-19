@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dialog --msgbox "[ HELLO WORLD ]" 10 70
