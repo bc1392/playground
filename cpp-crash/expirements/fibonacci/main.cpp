@@ -3,7 +3,7 @@
 int main() {
 
     // Define # of terms to generate.
-    const unsigned long long n = 94;
+    const unsigned short n = 94;
 
     // Initialize variables.
     unsigned long long t1 = 0;
@@ -11,14 +11,14 @@ int main() {
     unsigned long long tn = 0;
 
     // Generate the sequence.
-    printf("Fibonacci\n%llu\n%llu", t1, t2);
-    for (int i = 3; i <= n; i++) {
+    printf("Term, Value\n1, %llu\n2, %llu", t1, t2);
+    for (unsigned short i = 3; i <= n; i++) {
 
         tn = t1 + t2;
         t1 = t2;
         t2 = tn;
 
-        printf("\n%llu", tn);
+        printf("\n%hu, %llu", i, tn);
 
     }
     printf("\n");
