@@ -23,7 +23,6 @@ int main() {
     unsigned short eb = 0b011000000111001;
     unsigned short eo = 030071;
     unsigned short eh = 0x3039;
-    printf("")
 
     // FLOATING POINTS
     // Float / Double / Long Double = Single / Double / Extended (Percision)
