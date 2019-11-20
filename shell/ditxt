@@ -1,0 +1,24 @@
+#!/bin/bash
+clear
+
+echo "Checking file existance..." | dialog --backtitle "[DiTxt] Initialization" --progressbox 3 30
+sleep 0.25s
+
+if [ ! -r $1 ]; then
+    echo "File not found" | dialog --backtitle "[DiTxt] Initialization" --progressbox 3 18
+    sleep 1s
+    clear; exit 1
+else
+    echo "File found" | dialog --backtitle "[DiTxt] Initialization" --progressbox 3 14
+    sleep 1s
+fi
+
+echo "Loading file..."  | dialog --backtitle "[DiTxt] Initialization" --progressbox 3 19
+sleep 0.5s
+
+dialog --begin 3 1\
+    --backtitle "[DiTxt] Editing: $1"\
+    --ok-label "Save" --cancel-label "Discard"\
+    --editbox $1 $[LINES-5] $[COLUMNS-4]> $1
+
+exit 0
