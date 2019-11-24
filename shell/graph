@@ -1,0 +1,7 @@
+#/bin/bash
+
+if [ -r "$1" ]; then
+   tail "$1" | cut -d '|' -f 1 | sed -e 's!.*: \([0-9]\+\) .*!\1!' | spark
+else
+   echo "Cannot find file: $1"
+fi

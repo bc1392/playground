@@ -1,0 +1,11 @@
+#!/bin/bash
+
+clear
+for y in {0..7}; do
+  for x in {0..16}; do
+    tput cup $y $x; echo $(echo $RANDOM | cut -c1-1)
+  done
+done
+
+tput cup 8 0
+read -p '[Enter]'
